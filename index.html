@@ -11,15 +11,18 @@
     <h1>Formulario de registro</h1>
     <form id="formRegistro">
         <label for="placa"> Placa</label>
-        <input type="text" id="placa">
+        <input type="text" id="placa" required>
         <br>
+
         <label for="modelo"> Modelo</label>
-        <input type="text" id="modelo">
+        <input type="text" id="modelo" disabled required>
         <br>
         <label for="marca"> Marca</label>
-        <input type="text" id="marca">
+        <input type="text" id="marca" disabled required>
         <br>
-        <button type="button" id="btnEnviar">enviar</button>
+        
+        <br>
+        <button type="button" id="btnEnviar" style="display: none;">enviar</button>
     </form>
 
     <table id="infoTabla">
@@ -34,6 +37,7 @@
         <tbody id="infoBody"></tbody>
 
     </table>
+
     
 </body>
 </html>
