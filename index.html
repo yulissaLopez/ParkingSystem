@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SGP</title>
-    <script src="./js/main.js"></script>
+    <script type="module" src="./js/main.js"></script>
 </head>
 <body>
+    
+    <h1>Formulario de registro</h1>
+    <form id="formRegistro">
+        <label for="placa"> Placa</label>
+        <input type="text" id="placa">
+        <br>
+        <label for="modelo"> Modelo</label>
+        <input type="text" id="modelo">
+        <br>
+        <label for="marca"> Marca</label>
+        <input type="text" id="marca">
+        <br>
+        <button type="button" id="btnEnviar">enviar</button>
+    </form>
+
+    <table id="infoTabla">
+        <thead>
+            <tr>
+                <th>Placa</th>
+                <th>modelo</th>
+                <th>marca</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody id="infoBody"></tbody>
+
+    </table>
     
 </body>
 </html>
